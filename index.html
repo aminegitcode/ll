@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".titre1").hover(
+          function () {
+            $("#entreeselm").show();
+          },
+          function () {
+            $("#entreeselm").hide();
+          }
+        );
+        $(".titre2").hover(
+          function () {
+            $("#plat_elem").show();
+          },
+          function () {
+            $("#plat_elem").hide();
+          }
+        );
+        $(".elem").hover(
+          function () {
+            $(this).show();
+          },
+          function () {
+            $(this).hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>
+        <span class="titre1">Entrées</span>
+        <ul class="elem" id="entreeselm" style="display: none">
+          <li class="f">
+            <a
+              href="https://www.marmiton.org/recettes/recette_flamiche-au-maroilles_24681.aspx"
+              target="_blank"
+              >Flamiche au maroille</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.marmiton.org/recettes/recette_tarte-aux-poireaux-et-aux-lardons_12850.aspx"
+              target="_blank"
+              >Tarte aux poireaux</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cuisineaz.com/recettes/salade-de-tomates-au-basilic-82649.aspx"
+              target="_blank"
+              >Tomates basilic</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="titre2">Plats</span>
+        <ul class="elem" id="plat_elem" style="display: none">
+          <li class="f">
+            <a
+              href="https://www.marmiton.org/recettes/recette_pates-a-la-creme-de-parmesan-et-jambon_27928.aspx"
+              target="_blank"
+              >Pâtes au jambon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.marmiton.org/recettes/recette_hachis-parmentier_17639.aspx"
+              target="_blank"
+              >Hachis parmentier</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.marmiton.org/recettes/recette_falafel-croquettes-de-pois-chiches_23038.aspx"
+              target="_blank"
+              >Falafel</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
